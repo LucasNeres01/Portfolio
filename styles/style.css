@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Patrick+Hand&family=Shadows+Into+Light+Two&display=swap');
+
+:root {
+    --cor-primaria: #F7F0F0;
+    --cor-secundaria: #8AF3FF;
+    --cor-terciaria: #7FFFD4;
+    --cor-quartenaria: #000000;
+    --cor-hover: #272727;
+
+    --font-primaria: "Patrick Hand", serif;
+    --font-secundaria: "Shadows Into Light Two", serif;
+    --font-terciaria: "Inknut Antiqua", serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-quartenaria);
+    color: var(--cor-primaria);
+
+}
+
+.cabecalho {
+    padding: 1% 0% 0% 14%;
+
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+
+}
+
+.cabecalho__menu__links {
+    display: flex;
+    color: var(--cor-secundaria);
+    font-family: var(--font-terciaria);
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-decoration: none;
+
+}
+
+.titulo-destaque {
+    color: var(--cor-secundaria);
+
+}
+     .borda-destaque {
+        color: var(--cor-terciaria);
+        border: 1px solid #ffffff;
+        padding: 1px;
+        border-radius: 16px;
+
+}
+
+.apresentaçao {
+    display: flex;
+    padding: 1% 10%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+
+}
+
+.apresentaçao__conteudo {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    padding: 5%;
+    gap: 40px;
+
+}
+
+.apresentaçao__conteudo__titulo {
+    font-family: var(--font-primaria);
+    font-size: 2.25rem;
+
+}
+
+.apresentaçao__conteudo__paragrafo {
+    font-size: 1.5rem;
+    font-family: var(--font-secundaria);
+}
+
+.apresentaçao__links__subtitulo {
+    font-family: var(--font-primaria);
+    font-size: 1.5rem;
+
+}
+.apresentaçao__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+
+}
+
+.apresentaçao__links__navegacao {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid var(--cor-secundaria);
+    color: var(--cor-secundaria);
+    width: 50%;
+    padding: 10px 0px;
+    text-align: center;
+    border-radius: 16px;
+    text-decoration: none;
+    font-family: var(--font-terciaria);
+
+}
+.apresentaçao__links__link:hover {
+    background-color: var(--cor-hover);
+    color: var(--cor-terciaria);
+
+}
+
+.apresentacao__imagem {
+    width: 50%;
+}
+
+
+.desenvolvido {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 1.60rem;
+    font-weight: 400;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-quartenaria);
+    font-family: var(--font-primaria);
+    padding: 10px;
+    
+} 
+
+@media (max-width: 1000px) {
+    .cabecalho{
+    padding: 6%;
+    }
+
+    .cabecalho__menu {
+        justify-content: center;
+    }
+
+    .apresentaçao{
+    flex-direction: column-reverse;
+    padding: 5%;
+    }
+    
+    .apresentaçao__conteudo {
+        width: auto;
+    }
+}
